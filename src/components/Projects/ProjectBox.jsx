@@ -9,18 +9,24 @@ function ProjectBox(props) {
       <div className="project-technologies">
         {props.technologies.map((tech, index) => (
           <div key={index} className="technology">
-            <img src={tech.image} className="technology-image" />
+            <img
+              src={tech.image}
+              className="technology-image"
+              alt="Technology"
+            />
           </div>
         ))}
       </div>
-      <a
-        href={props.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="project-link-button"
-      >
-        {props.linkText}
-      </a>
+      {props.link && props.linkText && (
+        <a
+          href={props.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="project-link-button"
+        >
+          {props.linkText}
+        </a>
+      )}
       {props.gitRepoLink && (
         <a
           href={props.gitRepoLink}

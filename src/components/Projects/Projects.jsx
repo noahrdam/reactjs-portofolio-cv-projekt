@@ -35,7 +35,7 @@ function Projects() {
         <ProjectBox
           title="React Todo App"
           description="En simpel Todo App udviklet i React. Appen har funktionalitet til at tilføje, slette og markere opgaver som færdige."
-          link="https://www.example.com"
+          link="https://noahrdam.github.io/reactjs-todolist/"
           linkText="View Project"
           gitRepoLink="https://github.com/noahrdam/reactjs-todolist"
           technologies={[{ image: react }, { image: js }]}
@@ -43,8 +43,6 @@ function Projects() {
         <ProjectBox
           title="Reddit Projekt"
           description="En Reddit klon udviklet i C# med entity framework. Projektet har funktionalitet til at oprette, slette og kommentere på posts."
-          link="https://www.example.com"
-          linkText="View Project"
           gitRepoLink="https://github.com/noahrdam/RedditProjekt"
           technologies={[
             { image: csharp },
@@ -55,8 +53,6 @@ function Projects() {
         <ProjectBox
           title="Medicin Ordinationsprojekt"
           description="Et medicin ordinationsprojekt udviklet i C# og ASP.NET. Projektet har funktionalitet til at oprette, slette og redigere ordinationer."
-          link="https://www.example.com"
-          linkText="View Project"
           gitRepoLink="https://github.com/noahrdam/TestProjekt"
           technologies={[
             { image: csharp },
