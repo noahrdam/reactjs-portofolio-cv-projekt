@@ -1,8 +1,11 @@
 import React from "react";
 import "./Header.css";
 import Navbar from "../Navbar/Navbar";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
 function Header() {
+  useIntersectionObserver(".header-content", "animate-text");
+
   return (
     <header className="header">
       <Navbar />

@@ -1,8 +1,11 @@
 import React from "react";
 import "./Profile.css";
 import avatar from "./avatar.jpg";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 
 function Profile() {
+  useIntersectionObserver(".profile-container", "animate-text");
+
   return (
     <div id="profile" className="profile-container">
       <div className="profile-image-container">
