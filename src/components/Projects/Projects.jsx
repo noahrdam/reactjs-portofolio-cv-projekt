@@ -2,6 +2,16 @@ import React from "react";
 import "./Projects.css";
 import ProjectBox from "./ProjectBox.jsx";
 
+//SVGs
+import csharp from "../../assets/csharp.svg";
+import html5 from "../../assets/html5.svg";
+import css3 from "../../assets/css3.svg";
+import mongodb from "../../assets/mongodb.svg";
+import js from "../../assets/js.svg";
+import blazor from "../../assets/blazor.svg";
+import react from "../../assets/react.svg";
+import netframework from "../../assets/netframework.svg";
+
 function Projects() {
   return (
     <div id="projects" className="projects-section">
@@ -14,12 +24,12 @@ function Projects() {
           linkText="View Project"
           gitRepoLink="https://github.com/noahrdam/EksamensProjekt"
           technologies={[
-            { image: "src/assets/csharp.svg" },
-            { image: "src/assets/html5.svg" },
-            { image: "src/assets/css3.svg" },
-            { image: "src/assets/mongodb.svg" },
-            { image: "src/assets/js.svg" },
-            { image: "src/assets/blazor.svg" },
+            { image: csharp },
+            { image: html5 },
+            { image: css3 },
+            { image: mongodb },
+            { image: js },
+            { image: blazor },
           ]}
         />
         <ProjectBox
@@ -28,10 +38,7 @@ function Projects() {
           link="https://www.example.com"
           linkText="View Project"
           gitRepoLink="https://github.com/noahrdam/reactjs-todolist"
-          technologies={[
-            { image: "src/assets/react.svg" },
-            { image: "src/assets/js.svg" },
-          ]}
+          technologies={[{ image: react }, { image: js }]}
         />
         <ProjectBox
           title="Reddit Projekt"
@@ -40,9 +47,9 @@ function Projects() {
           linkText="View Project"
           gitRepoLink="https://github.com/noahrdam/RedditProjekt"
           technologies={[
-            { image: "src/assets/csharp.svg" },
-            { image: "src/assets/netframework.svg" },
-            { image: "src/assets/blazor.svg" },
+            { image: csharp },
+            { image: blazor },
+            { image: netframework },
           ]}
         />
         <ProjectBox
@@ -52,9 +59,9 @@ function Projects() {
           linkText="View Project"
           gitRepoLink="https://github.com/noahrdam/TestProjekt"
           technologies={[
-            { image: "src/assets/csharp.svg" },
-            { image: "src/assets/netframework.svg" },
-            { image: "src/assets/blazor.svg" },
+            { image: csharp },
+            { image: blazor },
+            { image: netframework },
           ]}
         />
       </div>

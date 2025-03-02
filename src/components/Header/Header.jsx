@@ -10,7 +10,9 @@ function Header() {
         <div className="header-text-container">
           <h2 className="header-text">👋Hej, jeg hedder</h2>
           <h1 className="header-title">Noah Rosenstand Dam</h1>
-          <p className="header-paragraph">En aspirende software udvikler..✨</p>
+          <p className="header-paragraph">
+            En aspirerende software udvikler..✨
+          </p>
         </div>
         <div className="header-icons">
           <a

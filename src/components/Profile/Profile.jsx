@@ -24,8 +24,8 @@ function Profile() {
           softwareudvikling, så lad os tage en snak!
           <br></br>
           <br></br>
-          Når jeg ikke koder, nyder jeg at se fodbold - gerne med en kold øl i
-          hånden, hænge ud med vennerne eller tilbringe tid med min kæreste.
+          Når jeg ikke koder, nyder jeg at se fodbold sammen med vennerne eller
+          tilbringe tid med min kæreste.
         </p>
       </div>
     </div>
