@@ -19,7 +19,22 @@ function Projects() {
       <div className="projects-container">
         <ProjectBox
           title="Full-stack Tilmeldingssystem for Cirkus Summarum Børneklub"
-          description="Som en del af mit 2. semester eksamensprojekt har jeg sammen med min studiegruppe udviklet en full-stack Blazor webapplikation for Muskelsvindsfonden. Systemet håndterer tilmelding og administration af børnepasning for frivillige, der arbejder på Cirkus Summarum."
+          description={
+            <>
+              Som en del af mit 2. semester eksamensprojekt har jeg sammen med
+              min studiegruppe udviklet en full-stack Blazor webapplikation for
+              Muskelsvindsfonden. Systemet håndterer tilmelding og
+              administration af børnepasning for frivillige, der arbejder på
+              Cirkus Summarum.
+              <br />
+              <br />
+              <span className="highlight">
+                Login til admin siden er: <br />
+                <strong>Username:</strong> Karsten <br />
+                <strong>Password:</strong> 123
+              </span>
+            </>
+          }
           link="https://clientappforgruppeseks.azurewebsites.net/"
           linkText="View Project"
           gitRepoLink="https://github.com/noahrdam/EksamensProjekt"
@@ -30,11 +45,12 @@ function Projects() {
             { image: mongodb },
             { image: js },
             { image: blazor },
+            { image: netframework },
           ]}
         />
         <ProjectBox
           title="React Todo App"
-          description="En simpel Todo App udviklet i React. Appen har funktionalitet til at tilføje, slette og markere opgaver som færdige."
+          description="En simpel Todo App udviklet i React. Appen har funktionalitet til at tilføje, slette og redigere todos."
           link="https://noahrdam.github.io/reactjs-todolist/"
           linkText="View Project"
           gitRepoLink="https://github.com/noahrdam/reactjs-todolist"
@@ -42,7 +58,7 @@ function Projects() {
         />
         <ProjectBox
           title="Reddit Projekt"
-          description="En Reddit klon udviklet i C# med entity framework. Projektet har funktionalitet til at oprette, slette og kommentere på posts."
+          description="En Reddit klon udviklet i C# med entity framework. Projektet har funktionalitet til at oprette, slette, upvote, downvote og kommentere på posts."
           gitRepoLink="https://github.com/noahrdam/RedditProjekt"
           technologies={[
             { image: csharp },
@@ -52,7 +68,7 @@ function Projects() {
         />
         <ProjectBox
           title="Medicin Ordinationsprojekt"
-          description="Et medicin ordinationsprojekt udviklet i C# og ASP.NET. Projektet har funktionalitet til at oprette, slette og redigere ordinationer."
+          description="Projektet indeholder en prototype på et ordinationssystem, der kan bruges til at ordinere medicin til borgere. Projektet er udviklet i C# og ASP.NET."
           gitRepoLink="https://github.com/noahrdam/TestProjekt"
           technologies={[
             { image: csharp },

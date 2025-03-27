@@ -14,7 +14,7 @@ function Header() {
           <h2 className="header-text">👋Hej, jeg hedder</h2>
           <h1 className="header-title">Noah Rosenstand Dam</h1>
           <p className="header-paragraph">
-            En aspirerende software udvikler..✨
+            En aspirerende softwareudvikler..✨
           </p>
         </div>
         <div className="header-icons">

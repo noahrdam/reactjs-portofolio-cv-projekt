@@ -95,3 +95,14 @@
   color: rgb(255, 255, 255);
   border-color: black;
 }
+
+.highlight {
+  display: inline-block;
+  background-color: #f9f871;
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.5;
+}
