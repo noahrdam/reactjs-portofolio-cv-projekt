@@ -11,6 +11,8 @@ import js from "../../assets/js.svg";
 import blazor from "../../assets/blazor.svg";
 import react from "../../assets/react.svg";
 import netframework from "../../assets/netframework.svg";
+import docker from "../../assets/docker.svg";
+import kubernetes from "../../assets/kubernetes.svg";
 
 function Projects() {
   return (
@@ -28,14 +30,8 @@ function Projects() {
               Cirkus Summarum.
               <br />
               <br />
-              <span className="highlight">
-                Login til admin siden er: <br />
-                <strong>Username:</strong> Karsten <br />
-                <strong>Password:</strong> 123
-              </span>
             </>
           }
-          link="https://clientappforgruppeseks.azurewebsites.net/"
           linkText="View Project"
           gitRepoLink="https://github.com/noahrdam/EksamensProjekt"
           technologies={[
@@ -49,12 +45,18 @@ function Projects() {
           ]}
         />
         <ProjectBox
-          title="React Todo App"
-          description="En simpel Todo App udviklet i React. Appen har funktionalitet til at tilføje, slette og redigere todos."
-          link="https://noahrdam.github.io/reactjs-todolist/"
+          title="Søgemaskine med Microservices og Skalering"
+          description="Som en del af mit 6. semester eksamensprojekt har jeg sammen med min studiegruppe bygget en distribueret søgemaskine i .NET. Systemet demonstrerer  X-, Y- og Z-akse skalering, microservice-arkitektur, database sharding, load balancing og caching, og er deployerbart via både Docker Compose og Kubernetes."
           linkText="View Project"
-          gitRepoLink="https://github.com/noahrdam/reactjs-todolist"
-          technologies={[{ image: react }, { image: js }]}
+          gitRepoLink="https://github.com/noahrdam/SearchEngineProject"
+          technologies={[
+            { image: netframework },
+            { image: blazor },
+            { image: docker },
+            { image: kubernetes }, 
+            { image: csharp },
+             
+          ]}
         />
         <ProjectBox
           title="Reddit Projekt"

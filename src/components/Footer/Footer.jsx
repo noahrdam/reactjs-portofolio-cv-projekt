@@ -7,7 +7,7 @@ function Footer() {
       <p className="footer-text">
         Made by Noah Dam using <i class="fa-brands fa-react"></i>
       </p>
-      <p className="footer-copyright"> © 2025 Noah Dam. All rights reserved.</p>
+      <p className="footer-copyright"> © {new Date().getFullYear()} Noah Dam. All rights reserved.</p>
     </footer>
   );
 }

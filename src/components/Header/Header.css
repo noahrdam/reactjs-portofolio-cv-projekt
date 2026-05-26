@@ -103,3 +103,51 @@ body {
 .animate-text .header-paragraph {
   animation: textFadeInUp 2s ease-out;
 }
+
+/* iPad (max 768px) */
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 44px;
+  }
+
+  .header-text {
+    font-size: 36px;
+  }
+
+  .header-icon {
+    font-size: 40px;
+  }
+
+  .more-about-me-button {
+    font-size: 16px;
+  }
+}
+
+/* iPhone (max 480px) */
+@media (max-width: 480px) {
+  .header {
+    padding: 16px;
+    margin-bottom: 30px;
+  }
+
+  .header-title {
+    font-size: 32px;
+  }
+
+  .header-text {
+    font-size: 24px;
+  }
+
+  .header-icon {
+    font-size: 32px;
+  }
+
+  .header-icons {
+    gap: 14px;
+  }
+
+  .more-about-me-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

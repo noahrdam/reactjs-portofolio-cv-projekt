@@ -61,3 +61,60 @@
 .animate-text .profile-about {
   animation: textFadeInUp 2s ease-out;
 }
+
+/* iPad (max 768px) */
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 95%;
+  }
+
+  .profile-image-container {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .profile-image {
+    width: 240px;
+    height: 240px;
+  }
+
+  .profile-info {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .profile-title {
+    font-size: 34px;
+  }
+
+  .profile-about {
+    font-size: 16px;
+  }
+}
+
+/* iPhone (max 480px) */
+@media (max-width: 480px) {
+  .profile-container {
+    padding: 16px;
+    max-width: 100%;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+
+  .profile-image {
+    width: 180px;
+    height: 180px;
+  }
+
+  .profile-title {
+    font-size: 26px;
+  }
+
+  .profile-about {
+    font-size: 15px;
+  }
+}

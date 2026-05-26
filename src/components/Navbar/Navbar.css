@@ -23,3 +23,39 @@
 .navbar-link:hover {
   color: #ffcc00;
 }
+
+/* iPad (max 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    top: 12px;
+    right: 12px;
+    padding: 8px 14px;
+  }
+
+  .navbar-content {
+    gap: 14px;
+  }
+
+  .navbar-link {
+    font-size: 15px;
+  }
+}
+
+/* iPhone (max 480px) */
+@media (max-width: 480px) {
+  .navbar {
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    padding: 8px 12px;
+  }
+
+  .navbar-content {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .navbar-link {
+    font-size: 13px;
+  }
+}

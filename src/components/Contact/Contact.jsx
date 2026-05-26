@@ -6,8 +6,8 @@ function Contact() {
     <div id="contact" className="contact-section">
       <h1 className="contact-title">Kontakt mig</h1>
       <p className="contact-subtitle">
-        Leder du efter en engageret praktikant med interesse for IT-arkitektur
-        og softwareudvikling? Jeg er i øjeblikket på udkig efter en praktikplads
+        Leder du efter en engageret medarbejder med interesse for IT-arkitektur
+        og softwareudvikling? Jeg er i øjeblikket på udkig efter et studiejob
         og er åben for spændende muligheder.
       </p>
       <h2 className="contact-name">Noah Rosenstand Dam</h2>
