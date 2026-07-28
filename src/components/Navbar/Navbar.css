@@ -10,6 +10,7 @@
 
 .navbar-content {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 
@@ -22,6 +23,35 @@
 
 .navbar-link:hover {
   color: #ffcc00;
+}
+
+.navbar-language {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 16px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 16px;
+}
+
+.flag-button {
+  background: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  transition: opacity 0.3s ease;
+  opacity: 0.4;
+}
+
+.flag-button.active {
+  opacity: 1;
+}
+
+.flag-button:hover {
+  opacity: 0.8;
 }
 
 /* iPad (max 768px) */

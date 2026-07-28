@@ -1,5 +1,5 @@
-import { useState } from "react";
 import "./App.css";
+import { LanguageProvider } from "./context/LanguageContext";
 import Header from "./components/Header/Header.jsx";
 import Profile from "./components/Profile/Profile.jsx";
 import Projects from "./components/Projects/Projects.jsx";
@@ -8,15 +8,17 @@ import Contact from "./components/Contact/Contact.jsx";
 
 function App() {
   return (
-    <div>
-      <Header />
-      <main>
-        <Profile />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div>
+        <Header />
+        <main>
+          <Profile />
+          <Projects />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </LanguageProvider>
   );
 }
 

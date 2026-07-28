@@ -1,3 +1,26 @@
+@keyframes textFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-text .projects-title {
+  animation: textFadeInUp 2s ease-out;
+}
+
+.project.animate-text {
+  animation: textFadeInUp 2s ease-out;
+}
+
+.github-all-button.animate-text {
+  animation: textFadeInUp 2s ease-out;
+}
+
 .projects-section {
   padding: 40px 20px;
   text-align: center;
@@ -22,10 +45,6 @@
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-}
-
-.project:hover {
-  transform: scale(1.05);
 }
 
 .project-title {
@@ -105,6 +124,25 @@
   font-size: 16px;
   margin-top: 10px;
   line-height: 1.5;
+}
+
+.github-all-button {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: black;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.github-all-button:hover {
+  background-color: black;
+  color: rgb(255, 255, 255);
+  border-color: black;
 }
 
 /* iPad (max 768px) */

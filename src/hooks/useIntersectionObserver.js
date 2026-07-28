@@ -6,21 +6,21 @@ const useIntersectionObserver = (
   options = { threshold: 0.1 }
 ) => {
   useEffect(() => {
-    const element = document.querySelector(selector);
+    const elements = document.querySelectorAll(selector);
 
-    if (!element) return;
+    if (elements.length === 0) return;
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          element.classList.add(className);
+          entry.target.classList.add(className);
         } else {
-          element.classList.remove(className);
+          entry.target.classList.remove(className);
         }
       });
     }, options);
 
-    observer.observe(element);
+    elements.forEach((el) => observer.observe(el));
 
     return () => {
       observer.disconnect();

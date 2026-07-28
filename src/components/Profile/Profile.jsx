@@ -2,9 +2,14 @@ import React from "react";
 import "./Profile.css";
 import avatar from "./avatar.jpg";
 import useIntersectionObserver from "../../hooks/useIntersectionObserver";
+import { useLanguage } from "../../context/LanguageContext";
+import da from "../../translations/da";
+import en from "../../translations/en";
 
 function Profile() {
   useIntersectionObserver(".profile-container", "animate-text");
+  const { language } = useLanguage();
+  const t = language === "da" ? da : en;
 
   return (
     <div id="profile" className="profile-container">
@@ -12,23 +17,14 @@ function Profile() {
         <img src={avatar} alt="Noah Rosenstand Dam" className="profile-image" />
       </div>
       <div className="profile-info">
-        <h1 className="profile-title">Lidt om mig</h1>
+        <h1 className="profile-title">{t.profile.title}</h1>
         <p className="profile-about">
-          Hej! Mit navn er Noah, og jeg studerer IT-Arkitektur på Aarhus
-          Erhvervsakademi, hvor jeg i øjeblikket er på 6. semester. Jeg brænder
-          for softwareudvikling og har erfaring med både front-end og back-end
-          teknologier. Jeg elsker at udvikle løsninger, der ikke bare fungerer,
-          men også skaber værdi for brugerne.
+          {t.profile.about[0]}
           <br></br>
           <br></br>
-          Lige nu er jeg på udkig efter et studiejob, hvor jeg kan bringe
-          mine færdigheder i spil og samtidig lære endnu mere om branchen. Hvis
-          du leder efter en engageret medarbejder med en passion for
-          softwareudvikling, så lad os tage en snak!
+          {t.profile.about[1]}
           <br></br>
           <br></br>
-          Når jeg ikke koder, nyder jeg at se fodbold sammen med vennerne eller
-          tilbringe tid med min kæreste.
         </p>
       </div>
     </div>

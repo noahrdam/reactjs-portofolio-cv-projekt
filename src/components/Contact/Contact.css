@@ -1,3 +1,21 @@
+@keyframes textFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-text .contact-title,
+.animate-text .contact-subtitle,
+.animate-text .contact-name,
+.animate-text .contact-list {
+  animation: textFadeInUp 2s ease-out;
+}
+
 .contact-section {
   margin-bottom: 30px;
   padding: 40px 20px;
